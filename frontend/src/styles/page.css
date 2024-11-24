@@ -1,0 +1,16 @@
+
+.container {
+    padding: 1% 1%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.right > div {
+    margin: 10% 1%;
+}

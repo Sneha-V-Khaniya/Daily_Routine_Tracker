@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+/* CSS HEX */
+:root {
+  --honeydew: #e8f5e9ff;
+  --tea-rose-red: #ffcdd2ff;
+  --uranian-blue: #b3e5fcff;
+  --charcoal: #37474fff;
+  --amber: #ffc107ff;
+  --mantis: #66bb6aff;
+  --light-coral: #e57373ff;
+
+  --bistre: #381f1cff;
+  --wisteria: #c8a1e0ff;
+  --yale-blue: #03346eff;
+  --jade: #51a16aff;
+  --engineering-orange: #BA2012ff;
+  --tiffany-blue: #b2e2d2ff;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Akaya Kanadaka", system-ui;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--charcoal);
+  background-color: var(--honeydew);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input, textarea, select, button {
+  font-family: inherit;
+}

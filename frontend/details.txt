@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* CSS HEX */
+
+--honeydew: #e8f5e9ff;
+--tea-rose-red: #ffcdd2ff;
+--uranian-blue: #b3e5fcff;
+--charcoal: #37474fff;
+--amber: #ffc107ff;
+--mantis: #66bb6aff;
+--light-coral: #e57373ff;
+
+--bistre: #381f1cff;
+--wisteria: #c8a1e0ff;
+--yale-blue: #03346eff;
+--jade: #51a16aff;
+--engineering-orange: #BA2012ff;
+--tiffany-blue: #b2e2d2ff;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: 10vh;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  /*margin-right: 5px;
+  margin-left: 5px;*/
+}
+.odd{
+	margin-top: 10vh;
+}
+.even{
+	margin-bottom: 10vh;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+  <div class="grid-item odd">signup</div>
+  <div class="grid-item even">email</div>
+  <div class="grid-item odd">username</div>  
+  <div class="grid-item even">password</div>
+  <div class="grid-item odd">submit</div>
+    
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,19 @@
+.heatmap-container {
+    max-width: 95%;
+    max-height: 250px;
+    margin: 1% auto;
+    padding: 1% 2%;
+    background-color: var(--charcoal);
+}
+
+.color-empty {
+    fill: #ebedf0;
+}
+
+.color-completed {
+    fill: var(--mantis);
+}
+
+.color-not-completed {
+    fill: var(--light-coral);
+}

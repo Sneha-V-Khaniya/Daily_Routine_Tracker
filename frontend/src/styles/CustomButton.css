@@ -1,0 +1,29 @@
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Use data attributes for hover effect */
+.custom-button:hover {
+    background-color: attr(data-hover-bg color, white);
+    color: attr(data-hover-color color, black);
+}
+
+/* Icon styling */
+.button-icon {
+    display: flex;
+    font-size: 20px;
+}
+
+/* Text styling */
+.button-text {
+    display: inline-block;
+}

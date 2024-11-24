@@ -1,0 +1,140 @@
+.form-page {
+    height: 100vh;
+    width: 100vw;
+    display: flexbox;
+
+    box-sizing: border-box;
+    padding: 5vh 5vw;
+
+    /* background-image: url(./bg-1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vw;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    /* justify-items: center; */
+}
+
+.grid-item {
+    border: 1px solid var(--alizarin);
+    padding: 4vh 1vw;
+    /* margin: 2vh 1vw; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #00000033;
+
+    justify-content: center;
+    font-weight: 500;
+    background-color: var(--uranian-blue);
+    display: flex;
+    flex-direction: column;
+}
+
+#email-cnt,
+#username-cnt,
+#password-cnt {
+    font-size: 1.3em;
+}
+
+
+#submit-cnt {
+    display: inline-block;
+    justify-items: center;
+    font-size: 1em;
+}
+
+.odd {
+    margin-top: 20vh;
+}
+
+.even {
+    margin-bottom: 20vh;
+
+}
+
+
+input {
+    /* max-width: 20vw; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--charcoal);
+    font-size: 0.8em;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.link {
+    color: var(--amber);
+}
+
+.sticker {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+    z-index: 1000;
+    background-image: url(./stickers.png);
+    background-size: contain;
+    background-repeat:repeat-x;
+    height: 100px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 1s ease;
+}
+
+.error-section {
+    color: var(--light-coral);
+}
+
+@media (max-width: 900px) {
+    .form-page {
+        padding: 2vh 1vw;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+    .grid-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .odd {
+        margin-top: 0;
+    }
+
+    .even {
+        margin-bottom: 0;
+    }
+    
+}
+
+/* For phones (480px and below) */
+@media (max-width: 480px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .odd {
+        margin-top: 0;
+    }
+
+    .even {
+        margin-bottom: 0;
+    }
+
+
+}
