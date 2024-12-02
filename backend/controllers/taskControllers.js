@@ -5,6 +5,7 @@ const addTask = async(req, res) => {
     const { userID, taskName } = req.body;
 
     if (!userID || !taskName) {
+        console.log("ok")
         return res.status(400).json({ message: 'userID and taskName are required' });
     }
 

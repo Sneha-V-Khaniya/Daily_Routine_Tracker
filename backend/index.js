@@ -18,7 +18,9 @@ app.use('/api/auth', require('./routes/userRoutes'));
 app.use('/api/task', require('./routes/taskRoutes'));
 app.use('/api/task/data', require('./routes/taskDataRoutes'));
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-    console.log(`Server listening on ${PORT}`);
-});
+// const PORT = process.env.PORT || 8080;
+// app.listen(PORT, () => {
+//     console.log(`Server listening on ${PORT}`);
+// });
+
+module.exports = app;
